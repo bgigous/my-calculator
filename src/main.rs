@@ -3,22 +3,22 @@ struct MyCalculator {
 }
 
 impl MyCalculator {
-    fn add(&mut self, a: & f64) -> &mut MyCalculator {
+    fn add(&mut self, a: & f64) -> &mut Self {
         self.result += a;
         self
     }
 
-    fn sub(&mut self, a: & f64) -> &mut MyCalculator {
+    fn sub(&mut self, a: & f64) -> &mut Self {
         self.result -= a;
         self
     }
 
-    fn div(&mut self, a: & f64) -> &mut MyCalculator {
+    fn div(&mut self, a: & f64) -> &mut Self {
         self.result /= a;
         self
     }
 
-    fn mult(&mut self, a: & f64) -> &mut MyCalculator {
+    fn mult(&mut self, a: & f64) -> &mut Self {
         self.result *= a;
         self
     }
